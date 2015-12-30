@@ -1,0 +1,110 @@
+$primary-color: #2bff6a;
+$primary-color-light: $primary-color *1.5;
+
+// Logo
+body {
+  padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+// Nav
+nav {
+  background-color: white!important;
+  border: none!important;
+  box-shadow: 0px 2px 10px 0px #888888;
+}
+
+nav a {
+   padding: 35px!important;
+}
+
+nav li:hover {
+  background-color: $primary-color;
+  color: $primary-color!important;
+}
+
+nav {
+  a {
+    color: black!important;
+  }
+  .nav-products {
+    background-color: $primary-color;
+  }
+}
+
+// Links
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+button {
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  background: $primary-color;
+  border: none;
+}
+
+button:hover {
+  background: $primary-color-light;
+}
+
+// Images
+.eyecatcher {
+  background-image: url("../images/amaze.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  width: 100%;
+  min-height: 100%;
+  bottom: 0;
+  top: 0;
+  overflow: auto;
+  position: fixed;
+}
+
+// Index
+.cta {
+  height:100%;
+}
+
+// Products
+.thing {
+  box-shadow: 0px 0px 3px 0px #888888;
+}
+
+// Utility classes
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.padding-0 {
+  padding: 0px;
+}
+
+.margin-0 {
+  margin: 0px;
+}
+
+
+@media(min-width: 768px) {
+  body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+  }
+
+  .navbar-fixed-top .navbar-brand {
+    padding: 15px 0;
+  }
+
+  .nav > li > a {
+    padding:20px;
+  }
+
+  .navbar-brand {
+    padding: 10px 15px 10px 15px;
+  }
+}
