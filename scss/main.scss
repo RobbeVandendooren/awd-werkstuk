@@ -3,7 +3,7 @@ $primary-color-light: $primary-color *1.5;
 
 // Logo
 body {
-  padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+  padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
 // Nav
@@ -13,22 +13,23 @@ nav {
   box-shadow: 0px 2px 10px 0px #888888;
 }
 
-nav a {
-   padding: 35px!important;
-}
-
 nav li:hover {
   background-color: $primary-color;
   color: $primary-color!important;
 }
 
 nav {
-  a {
+  li a {
+    padding: 35px!important;
     color: black!important;
   }
-  .nav-products {
+  .nav-selected {
     background-color: $primary-color;
   }
+}
+
+.navbar-brand img {
+  height: 100%!important;
 }
 
 // Links
@@ -40,15 +41,20 @@ a:hover {
   color: white;
 }
 
-button {
+.button {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   background: $primary-color;
   border: none;
 }
 
-button:hover {
+.button:hover {
   background: $primary-color-light;
+}
+
+// h1, h2, h3, h4, h5, h6
+h2 {
+  padding: 1% 0 1% 0;
 }
 
 // Images
@@ -68,11 +74,30 @@ button:hover {
 // Index
 .cta {
   height:100%;
+  padding-top: 20%;
 }
 
 // Products
-.thing {
+.post {
   box-shadow: 0px 0px 3px 0px #888888;
+}
+
+.post-container {
+  padding: 0px 150px 0px 150px;
+}
+
+.post-title {
+  padding: 2% 0px 1% 0px;
+}
+
+.post-description {
+  padding: 3% 5% 3% 5%;
+  margin: auto;
+}
+
+// About
+.map {
+  margin: 3% 0 3% 0;
 }
 
 // Utility classes
@@ -90,6 +115,10 @@ button:hover {
   margin: 0px;
 }
 
+.padding-top {
+  padding-top: 2%;
+}
+
 
 @media(min-width: 768px) {
   body {
@@ -105,6 +134,40 @@ button:hover {
   }
 
   .navbar-brand {
-    padding: 10px 15px 10px 15px;
+    padding:15px 15px 15px 15px;
+    height: auto;
+  }
+
+  .nav-logo {
+    //margin-bottom: 30px!important;
+  }
+}
+
+@media(max-width: 1200px) {
+  .post-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media(max-width: 991px) {
+  .post-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .center-block {
+    width: 100%;
+  }
+}
+
+@media(max-width: 768px) {
+
+  body {
+    padding-top: 70px;
+  }
+
+  .navbar-toggle {
+    background: black;
   }
 }
